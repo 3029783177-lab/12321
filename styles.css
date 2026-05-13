@@ -137,6 +137,50 @@ canvas {
   line-height: 1.5;
 }
 
+.character-select {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  width: min(520px, 88vw);
+}
+
+.character-card {
+  min-height: 88px;
+  border: 3px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  cursor: pointer;
+  display: grid;
+  gap: 3px;
+  justify-items: center;
+  align-content: center;
+  padding: 8px;
+}
+
+.character-card.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.character-card .mark {
+  width: 28px;
+  height: 28px;
+  border: 2px solid currentColor;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.character-card strong {
+  font-size: 14px;
+}
+
+.character-card small {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
 #startButton,
 .icon-button,
 .touch-controls button {
@@ -181,7 +225,7 @@ canvas {
 
 .touch-controls {
   display: none;
-  grid-template-columns: 1fr 1fr 1.4fr;
+  grid-template-columns: 1fr 1fr 1fr 1.4fr;
   gap: 10px;
   margin-top: 12px;
 }
@@ -217,6 +261,11 @@ canvas {
 
   .touch-controls {
     display: grid;
+  }
+
+  .character-select {
+    grid-template-columns: 1fr;
+    width: min(320px, 86vw);
   }
 }
 
