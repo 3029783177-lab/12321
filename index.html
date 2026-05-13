@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>&#40657;&#30333;&#20687;&#32032;&#38556;&#30861;&#38383;&#20851;</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game-panel" aria-label="&#40657;&#30333;&#20687;&#32032;&#38556;&#30861;&#38383;&#20851;&#28216;&#25103;">
+        <div class="topbar">
+          <div>
+            <p class="kicker">&#40657;&#30333;&#20687;&#32032;&#38556;&#30861;&#38383;&#20851;</p>
+            <h1 id="levelTitle">&#31532; 1 &#20851;</h1>
+          </div>
+          <div class="stats" aria-live="polite">
+            <span id="deathCount">&#27515;&#20129; 0</span>
+            <span id="timer">00:00</span>
+          </div>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="game" width="640" height="360" aria-label="&#28216;&#25103;&#30011;&#38754;"></canvas>
+          <div id="overlay" class="overlay">
+            <h2>&#40657;&#30333;&#38383;&#20851;</h2>
+            <p>&#36530;&#36807;&#23574;&#21050;&#21644;&#31227;&#21160;&#26041;&#22359;&#65292;&#25269;&#36798;&#38376;&#21475;&#12290;</p>
+            <button id="startButton" type="button">&#24320;&#22987;</button>
+          </div>
+        </div>
+
+        <div class="controls-row">
+          <div class="hint">A/D &#25110; &larr;/&rarr; &#31227;&#21160; &middot; W/&#31354;&#26684;/&uarr; &#36339;&#36291; &middot; R &#37325;&#24320;</div>
+          <button id="restartButton" class="icon-button" type="button" aria-label="&#37325;&#24320;&#24403;&#21069;&#20851;" title="&#37325;&#24320;&#24403;&#21069;&#20851;">&#8635;</button>
+        </div>
+
+        <div class="touch-controls" aria-label="&#35302;&#23631;&#25511;&#21046;">
+          <button data-control="left" type="button" aria-label="&#21521;&#24038;">&larr;</button>
+          <button data-control="right" type="button" aria-label="&#21521;&#21491;">&rarr;</button>
+          <button data-control="jump" class="jump" type="button" aria-label="&#36339;&#36291;">&uarr;</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
