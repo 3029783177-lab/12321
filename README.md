@@ -30,3 +30,4 @@ http://127.0.0.1:4173
 - Guard: shield skill, blocks moving blocks, falling rocks, and shield gates.
 - Phase: phase skill, passes through phase walls.
 "mihomo"
+"mihono"
